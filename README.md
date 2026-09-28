@@ -283,4 +283,3 @@ The headline value in `results.json` is `hard.macro_6.estimated_pass_at_8`.
 | `configs/search_r1.yaml` | Search-R1 training and retrieval endpoint. |
 | `configs/eval.yaml` | Evaluation sampling, generation budgets, tool backends, retrieval, and prices. |
 | `configs/arxivmath.yaml`, `configs/medxpertqa.yaml`, `configs/mmlu_pro.yaml`, `configs/chembench.yaml` | Additional benchmark preparation. |
-# FlyBy
