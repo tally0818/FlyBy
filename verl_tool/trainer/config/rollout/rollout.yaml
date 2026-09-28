@@ -1,0 +1,298 @@
+
+_target_: verl.workers.config.RolloutConfig
+
+
+name: ???
+
+
+mode: sync
+
+
+temperature: 1.0
+
+
+top_k: -1
+
+
+top_p: 1
+
+
+
+prompt_length: ${oc.select:data.max_prompt_length,512}
+
+
+
+response_length: ${oc.select:data.max_response_length,512}
+
+
+
+dtype: bfloat16
+
+
+gpu_memory_utilization: 0.5
+
+
+ignore_eos: False
+
+
+enforce_eager: False
+
+
+
+
+
+cudagraph_capture_sizes: null
+
+
+free_cache_engine: True
+
+
+tensor_model_parallel_size: 2
+
+
+data_parallel_size: 1
+
+
+expert_parallel_size: 1
+
+
+pipeline_model_parallel_size: 1
+
+
+max_num_batched_tokens: 8192
+
+
+max_model_len: null
+
+
+max_num_seqs: 1024
+
+
+enable_chunked_prefill: True
+
+
+enable_prefix_caching: False
+
+
+
+load_format: dummy
+
+
+log_prob_micro_batch_size: null
+
+
+log_prob_micro_batch_size_per_gpu: null
+
+
+
+log_prob_use_dynamic_bsz: ${oc.select:actor_rollout_ref.actor.use_dynamic_bsz,false}
+
+
+
+log_prob_max_token_len_per_gpu: ${oc.select:actor_rollout_ref.actor.ppo_max_token_len_per_gpu,16384}
+
+
+disable_log_stats: True
+
+
+
+do_sample: True
+
+
+n: 1
+
+
+
+over_sample_rate: 0
+
+
+
+
+multi_stage_wake_up: false
+
+
+engine_kwargs:
+
+
+  vllm: {}
+
+
+  sglang: {}
+
+
+val_kwargs:
+
+
+  _target_: verl.workers.config.SamplingConfig
+
+
+
+  top_k: -1
+
+
+  top_p: 1.0
+
+
+  temperature: 0
+
+
+  n: 1
+
+
+  do_sample: False
+
+
+multi_turn:
+
+
+  _target_: verl.workers.config.MultiTurnConfig
+
+
+  enable: False
+
+
+  max_assistant_turns: null
+
+
+  tool_config_path: null
+
+
+  max_user_turns: null
+
+
+  max_parallel_calls: 1
+
+
+  max_tool_response_length: 256
+
+
+  tool_response_truncate_side: middle
+
+
+  interaction_config_path: null
+
+
+
+
+  use_inference_chat_template: False
+
+
+
+
+
+
+
+
+
+  tokenization_sanity_check_mode: strict
+
+
+  format: hermes
+
+
+  num_repeat_rollouts: null
+
+
+
+calculate_log_probs: False
+
+
+agent:
+
+
+  _target_: verl.workers.config.AgentLoopConfig
+
+
+  num_workers: 8
+
+
+
+  default_agent_loop: verltool_agent
+
+
+
+
+
+
+
+
+
+
+
+  agent_loop_config_path: null
+
+
+  custom_async_server:
+
+
+    _target_: verl.workers.config.CustomAsyncServerConfig
+
+
+    path: null
+
+
+    name: null
+
+
+
+
+
+
+
+
+
+
+
+
+
+update_weights_bucket_megabytes: 512
+
+
+trace:
+
+
+  _target_: verl.workers.config.TraceConfig
+
+
+  backend: null
+
+
+  token2text: False
+
+
+
+
+skip_rollout: False
+
+
+
+skip_dump_dir: /tmp/rollout_dump
+
+
+
+skip_tokenizer_init: True
+
+
+profiler:
+
+
+  _target_: verl.utils.profiler.ProfilerConfig
+
+
+
+  tool: ${oc.select:global_profiler.tool,null}
+
+
+  enable: ${oc.select:actor_rollout_ref.actor.profiler.enable,false}
+
+
+  all_ranks: ${oc.select:actor_rollout_ref.actor.profiler.all_ranks,false}
+
+
+  ranks: ${oc.select:actor_rollout_ref.actor.profiler.ranks,[]}
+
+
+  save_path: ${oc.select:global_profiler.save_path,null}
+
+
+  tool_config: ${oc.select:actor_rollout_ref.actor.profiler.tool_config,null}

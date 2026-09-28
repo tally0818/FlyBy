@@ -1,0 +1,12 @@
+suites:
+  mmlu_pro_500: {path: data/eval/mmlu_pro_500.jsonl, k: 16}
+
+mmlu_pro:
+  dataset:
+    name: TIGER-Lab/MMLU-Pro
+    split: test
+    revision: b189ec765aa7ed75c8acfea42df31fdae71f97be
+  sample: {seed: 42, size: 500}
+  paths:
+    sample: data/eval/mmlu_pro_500.jsonl
+    sample_manifest: data/eval/mmlu_pro_500_manifest.json

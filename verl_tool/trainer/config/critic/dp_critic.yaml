@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+defaults:
+
+
+  - ../optim@optim: fsdp
+
+
+  - ../engine@model.fsdp_config: fsdp
+
+
+  - critic
+
+
+  - _self_
+
+
+_target_: verl.workers.config.FSDPCriticConfig
+
+
+strategy: fsdp
+
+
+model:
+
+
+  _target_: verl.workers.config.FSDPCriticModelCfg
+
+
+  use_shm: False
+
+
+  enable_gradient_checkpointing: True
+
+
+  enable_activation_offload: False
+
+
+  use_remove_padding: False
+
+
+  lora_rank: 0
+
+
+  lora_alpha: 16
+
+
+  target_modules: all-linear
+
+
+forward_micro_batch_size: ${oc.select:.ppo_micro_batch_size,null}
+
+
+forward_micro_batch_size_per_gpu: ${oc.select:.ppo_micro_batch_size_per_gpu,null}
+
+
+ulysses_sequence_parallel_size: 1
+
+
+grad_clip: 1.0

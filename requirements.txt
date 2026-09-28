@@ -1,0 +1,2 @@
+-e ./verl[vllm,math,geo]
+-e .[train]

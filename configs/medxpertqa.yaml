@@ -1,0 +1,15 @@
+suites:
+  medxpertqa_text_500: {path: data/eval/medxpertqa_text_500.jsonl, k: 16}
+
+medxpertqa:
+  dataset:
+    name: TsinghuaC3I/MedXpertQA
+    subset: Text
+    split: test
+    data_file: Text/test.jsonl
+    revision: 7e7c465a68eb2b866926bfa59c8c9d17a8daba65
+    expected_source_rows: 2450
+  sample: {seed: 42, size: 500}
+  paths:
+    sample: data/eval/medxpertqa_text_500.jsonl
+    sample_manifest: data/eval/medxpertqa_text_500_manifest.json

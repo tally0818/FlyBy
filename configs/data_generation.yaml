@@ -1,0 +1,64 @@
+# Source generation and oracle-lift screening.
+seed: 42
+model:
+  name: Qwen/Qwen3-4B
+  revision: 1cfa9a7208912126459214e8b04321603b3df60c
+  engine:
+    dtype: bfloat16
+    tensor_parallel_size: 1
+    gpu_memory_utilization: 0.85
+    max_model_len: 32768
+    max_num_seqs: 32
+    enable_prefix_caching: true
+
+paths:
+  source: data/source
+  cache: data/.build_cache
+
+api:
+  synthesis_budget_usd: 100
+  probe_budget_usd: 150
+  timeout_s: 180
+  max_retries: 2
+  concurrency: 8
+
+# Fixed token prices for API cost accounting.
+depths:
+  1: {model: deepseek/deepseek-v4-flash, max_tokens: 128, p_in: 0.0938, p_out: 0.1876}
+  2: {model: deepseek/deepseek-v3.2, max_tokens: 512, p_in: 0.269, p_out: 0.40}
+  3: {model: deepseek/deepseek-v4-pro, max_tokens: 1536, p_in: 0.435, p_out: 0.87}
+
+difficulty:
+  probe_backend: {model: deepseek/deepseek-v4-pro, max_tokens: 512, p_in: 0.435, p_out: 0.87}
+  chunk_items: 128
+  decode: {temperature: 1.0, top_p: 0.95, top_k: 20, max_new_tokens: 16384}
+  math:
+    n_rollouts: 8
+    chance: 0.0
+    band_skill: [0.25, 0.75]
+    source_targets: {arxivmath_training: 900, dapo_math: 500}
+    oracle_gap: {share: 0.4, max_skill: 0.0, min_lift: 0.125, n_rollouts: 8, max_candidates: 1500}
+  science:
+    n_rollouts: 16
+    chance: 0.25  # fallback only; actual MCQ chance = 1 / number of options
+    band_skill: [0.25, 0.75]
+    source_targets: {supergpqa: 900, goosereason_stem: 500}
+    oracle_gap: {share: 0.4, max_skill: 0.0, min_lift: 0.125, n_rollouts: 8, max_candidates: 1500}
+
+sft:
+  per_domain: 400
+  sources: {math: arxivmath_training, science: supergpqa}
+  control_domain_weights: {math: 41, science: 54}
+
+synthesis:
+  failed_rollouts_per_problem: 1
+  alphas: [0.4, 0.6, 0.8]
+  epistemic_window_chars: 512
+  total_own_tokens: 16384
+  decode: {temperature: 0.6, top_p: 0.95, top_k: 20, max_new_tokens: 16384}
+  # Four branches, collection >=2/4 and >=1 gain; strict 0/4 -> >=3/4;
+  # one call only.
+
+replay:
+  hf: open-thoughts/OpenThoughts3-1.2M
+  revision: 61bcf9d4eb38b30295efc2021227a63cc5bb34c8

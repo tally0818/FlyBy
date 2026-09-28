@@ -1,0 +1,81 @@
+
+
+model: outputs/models/sft
+seed: 42
+
+data:
+
+  train: data/processed/train_rl.jsonl
+
+rollout:
+  n: 8
+  temperature: 1.0
+  top_p: 1.0
+  top_k: -1
+  batch_prompts: 8
+  log_prob_micro_batch_size_per_gpu: 1
+  max_prompt_tokens: 4096
+
+  own_tokens_total: 16384
+  max_response_tokens: 22592
+  max_turns: 4
+  stop: ["</llm_query>"]
+  mask_observations: true
+
+tool:
+  type: lrm_bridge
+  router_workers: 1
+  timeout_s: 180
+  max_retries: 2
+  q_max_chars: 300
+  budget_usd: 500
+  concurrency: 8
+  gold_redaction: true
+  thinking: false
+
+  depths:
+    1: { model: deepseek/deepseek-v4-flash, max_tokens: 128,  p_in: 0.0938, p_out: 0.1876 }
+    2: { model: deepseek/deepseek-v3.2,     max_tokens: 512,  p_in: 0.269,  p_out: 0.40 }
+    3: { model: deepseek/deepseek-v4-pro,   max_tokens: 1536, p_in: 0.435,  p_out: 0.87 }
+
+reward:
+  manager: effi
+  lam: 0.1
+  norm_cost: true
+  p_gpu_hr: 3.49
+
+  throughput_json: outputs/bench/throughput.json
+  throughput_model: Qwen/Qwen3-4B
+
+optim:
+  adv: grpo
+  norm_adv_by_std_in_grpo: false
+
+  loss_agg_mode: token-mean
+  lr: 1.0e-6
+  ppo_mini_batch_size: 8
+  ppo_micro_batch_size_per_gpu: 1
+  ppo_max_token_len_per_gpu: 28672
+  ppo_epochs: 1
+  clip_ratio: 0.2
+  clip_ratio_low: 0.2
+  eps_high: 0.28
+  entropy_coeff: 0.0
+  use_kl_loss: true
+  kl_coef: 1.0e-3
+  kl_loss_type: low_var_kl
+  grad_ckpt: true
+  dynamic_bsz: true
+
+  optimizer_offload: true
+  gpu_memory_utilization: 0.70
+  tp: 1
+
+run:
+  max_concurrent_trajectories: 16
+  wandb_project: EffieReasoner
+  out_root: outputs/models
+  total_steps: 80
+  save_freq: 40
+  val_freq: -1
+  val_before_train: false

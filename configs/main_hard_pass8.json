@@ -1,0 +1,4731 @@
+{
+  "version": 1,
+  "baseline_model": "Qwen/Qwen3-4B",
+  "baseline_rollouts": 16,
+  "hard_definition": "Qwen3-4B correct_count <= 4 of 16 (avg@16 <= 0.25)",
+  "hard_max_correct": 4,
+  "components": [
+    {
+      "key": "arxivmath",
+      "benchmark": "ArXivMath",
+      "suite": "arxivmath",
+      "config_path": "configs/eval.yaml",
+      "n_full": 232,
+      "n_hard": 207,
+      "hard_problems": [
+        {
+          "id": "arxivmath:arxivmath-0126:17",
+          "base_correct": 3
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:18",
+          "base_correct": 3
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:20",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:21",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:22",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:23",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:24",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:25",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:26",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:27",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:28",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:29",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:31",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:32",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:33",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:34",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:36",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:37",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:38",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0126:39",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:41",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:42",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:43",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:45",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:46",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:47",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:48",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:49",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:50",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:51",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:52",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:53",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:54",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:55",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:56",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:57",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:58",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:59",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:60",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:61",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:62",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:63",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:64",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:67",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:68",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:69",
+          "base_correct": 3
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:70",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0226:71",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:100",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:101",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:72",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:73",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:74",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:75",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:76",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:77",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:78",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:79",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:80",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:81",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:82",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:83",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:84",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:85",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:86",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:87",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:88",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:89",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:90",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:91",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:92",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:93",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:95",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:96",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:97",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:98",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0326:99",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:102",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:103",
+          "base_correct": 3
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:104",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:105",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:107",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:108",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:109",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:110",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:111",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:112",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:113",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:115",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:116",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:117",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:118",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:119",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:120",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:121",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:122",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:123",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:124",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:125",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:126",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:127",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:128",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:129",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:130",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:131",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:132",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:133",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:134",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:136",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:137",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:138",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:139",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:141",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0426:142",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:143",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:145",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:146",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:147",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:148",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:149",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:151",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:153",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:154",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:155",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:156",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:159",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:160",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:161",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:162",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:163",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:164",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:165",
+          "base_correct": 3
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:166",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:167",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:168",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:169",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:170",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:171",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:172",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:174",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:175",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:176",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:178",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:179",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:180",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:181",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-0526:182",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:0",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:1",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:10",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:11",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:14",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:16",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:2",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:3",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:4",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:5",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:7",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:8",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath:arxivmath-1225:9",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:0",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:1",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath_0626:10",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:11",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:12",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:13",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:14",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:15",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:16",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:17",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:18",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:19",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:2",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:20",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:21",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:22",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:23",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:24",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:25",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:26",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:27",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath_0626:28",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:29",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:3",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:30",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:32",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath_0626:33",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:34",
+          "base_correct": 4
+        },
+        {
+          "id": "arxivmath_0626:36",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:37",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:38",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:39",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:4",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath_0626:40",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath_0626:41",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:42",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:43",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:44",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:45",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:46",
+          "base_correct": 2
+        },
+        {
+          "id": "arxivmath_0626:47",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:48",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:5",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:6",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:7",
+          "base_correct": 0
+        },
+        {
+          "id": "arxivmath_0626:8",
+          "base_correct": 1
+        },
+        {
+          "id": "arxivmath_0626:9",
+          "base_correct": 0
+        }
+      ]
+    },
+    {
+      "key": "gpqa",
+      "benchmark": "GPQA-Diamond",
+      "suite": "gpqa_diamond",
+      "config_path": "configs/eval.yaml",
+      "n_full": 198,
+      "all_ids_sha256": "a5b9a497b1394fbba5823496f000910346210d9e965bfc0ba8d983544d518f44",
+      "n_hard": 80,
+      "hard_problems": [
+        {
+          "id": "gpqa_diamond:rec0yTRmO1o1xCA6H",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rec1oj2DveQWl9Rpw",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rec4r4KWNLrT7g2kR",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rec5rjeLsEq5Fg7Oj",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:rec8nshandHARTkrg",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rec9W28HgpEUeUN8k",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:rec9ubQihAh6g9bft",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recA1i5ZAh0Uzclxp",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recAAJoHMW45Lv5je",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recAYkd96NNuNl1Ei",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recBGxVySx1pkrO1i",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recBXlqrZUCR897It",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recD8oX1KevFbl7bL",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recDDxpS9s8cwkqfq",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recDj2Y2BbtV02Wv5",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recFaL6j8UMhutXrc",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recGFNRVl1qBZGwyU",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recIlghoOw5VbY4Zh",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recK9F5aqdaybl8bb",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recLAgwx9vbgB5EHk",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recLSzwBUS3olCjhl",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recMicVBcqy1xM1jq",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recNAiPUKOulQbKVP",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recO3hvCWRGiG0odN",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recOkA2zsy4GSMD9R",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recOvqPKUtyy9ISA1",
+          "base_correct": 3
+        },
+        {
+          "id": "gpqa_diamond:recRgabRzMaEoBRcM",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recRhwQwHijW0gCLo",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:recUBgVlkKzcRPDdK",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recUOePh79cp4T2Bg",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recUc29lMDBEvurYo",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:recV1nqYQvpII94oC",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recVE8cUNHpHZIAvL",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recVEXvhYxAhELVqB",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recVvpD8miVjmmyfe",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recWxGU8Q4YReJ1tb",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recYA3LPsCvF1fTMI",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recZ13cwgDQf9jRd9",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:recZWeueB7lSPR6wN",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recZbxrocrxh9YENH",
+          "base_correct": 3
+        },
+        {
+          "id": "gpqa_diamond:recZdZxsN0AxDx0pB",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recZt4x514UQNnsgy",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recakFKZioXUuldcd",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recb2M22zaD3tL6Qc",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recb4cGsC6BJUCU3V",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recb80OwMgNnceA9t",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:reccOKzFNmyqeJ6ry",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:reccVBrYdwsB84fGy",
+          "base_correct": 3
+        },
+        {
+          "id": "gpqa_diamond:recclFbsjbaiVVnnV",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:receo3UUzRvWCqyfA",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recfTlTMjZBuOducT",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recgC4GJ8wUemlUQD",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rechKl68Uc6H7vU0N",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recihePFulRgNKsIn",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recjJ54TXc04enRkZ",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:reck1zKeCssmN82Ga",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:reck4G4xxv3YnpbtQ",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:reckEnrOPFT9Ru7tW",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:reckl6PkaEMWM50yZ",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:recn3NhOhqAPLda16",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recnGEpF1srQpaqWq",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recnTTKdBzfuoZ7w7",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recnawZPumSCLMVgp",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recnjViFrqlZNL3fY",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recooG6bivTUJpDBz",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recqGD3fxPCI59vPQ",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recr3VHM4zYf6dMFY",
+          "base_correct": 1
+        },
+        {
+          "id": "gpqa_diamond:recrNbtgTNoabJJi6",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recs3PLPUEMiqg4P8",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:rectlyG9pCAAuWhoB",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recuyeuT5rQ6qDt8F",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recvZlMbpPz0yLDle",
+          "base_correct": 3
+        },
+        {
+          "id": "gpqa_diamond:recwW1A85nfyQpReG",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recxTy0x7M6T9ikc0",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:recxsX66ktJ1Lwt4f",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recyl3usDqb7ruXJx",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:recyrk6XBVwugG5u8",
+          "base_correct": 4
+        },
+        {
+          "id": "gpqa_diamond:recz3MfYHPRhsEQkW",
+          "base_correct": 0
+        },
+        {
+          "id": "gpqa_diamond:reczUoM8JsxU6pYxr",
+          "base_correct": 2
+        },
+        {
+          "id": "gpqa_diamond:reczkBiPPNrNN49Hp",
+          "base_correct": 4
+        }
+      ]
+    },
+    {
+      "key": "supergpqa",
+      "benchmark": "SuperGPQA",
+      "suite": "supergpqa_test",
+      "config_path": "configs/eval.yaml",
+      "n_full": 500,
+      "all_ids_sha256": "9159e15fb413802593245d390cb6172a64e741aff3800ac729db8459aa58c314",
+      "n_hard": 252,
+      "hard_problems": [
+        {
+          "id": "supergpqa:014a9aa683e0471b9e76e9b65eb4fdf7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:016fee174fb0475fbb82df15ea963818",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:01ee1c999bd043a0ba10c590b3e3525b",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:025ebef182784528a15a00777e91d321",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:043aff093ccf4bd1b707341fef257bb5",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:0a2a0e0994f54b7d938a4a38ace3e5cf",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:0af3aa20b24e4c38b13d901ba8bfe877",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:0e4b8c514ae34da98da9dc52ee18c68e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:0e971ef965cc4f0582b90c5b7b15e048",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:0fd0d00de38e41b289abfc0b632f468f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:10bd723a055741f9a4e417c070f6e604",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:10ecab5cae294ece9e3a494d09250e2a",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:11fb5eb8a8d1441ab381964cd2984859",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:12c9b0f7c5514996b08a7da8223f671e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:14051f1f17e74f90a7e58d2fb3d202a6",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:14db320ccd724a4e89318f7b41f76459",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:15696903fc444c7e9245bbfc88364dc4",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:16476cf20bed479086eff6484b70f908",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:173276d4ac6a41a694b50e7afee2bfbd",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:173c7ff0f3d14c73944f0f1ba6f662c5",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:17ac767a0dda4fa4ac527695baa7519d",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:18732efb54864f908b16b613488a71bf",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1956608e8938457f98f5db1352e79c5f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1ac67e3e8ac54740b8b62ce8d972a46a",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:1bbdce10b1be4110af1622442b74013b",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1dcc3be4caa4407ab6b83434755aa81f",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:1dd4c379b63346419417620e7ce4ee60",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1df906e2d5ef4b3db12d4619b7650cca",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1e7051c9b9ea458baefef65b96aaf7ce",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:1ea472a95538448fbd6ac20e797fe6dc",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:209bea18d9b34110ac6f1c33ac7bd14f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:20cb818f640b4f7ca580012a1ef583ae",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:23c410836e104aed993dc2414bef69aa",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:278b1bc0ff8040b5beb619203318ea17",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:287349ab03914a81851c871c2eac7522",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:2919d5abaf2a4f66bf4156acde71e898",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:2940ad1a2a5a48b0bdf08df69be46d02",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:2b89a58c73ff449fb92c14b40b9566f8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:2ca5f79cf8ce4ffaafa4bf7e7c9c73c8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:2df8de86bd6747ea918bf2f426b0337a",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:2ef8b5a01bcf4de3a2d0951446e21825",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:2ff87839a6cd4a3a9608c0b901f93ed6",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:309dbd6cc2f842f9b0c2ff9b6e040090",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:31355377cc594436b51dc73090f6e248",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3545bd89c51c45d4989d1f448953c8a1",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:35a725001bd84d4d99770ffdb1aa2aad",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:363af381e52d467fba532830cf32ddf0",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3a6167a7d04b4a8984dadb132f439ce1",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3a623f33526d430c81fb567a695a7424",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3b03a13387954808b332aad5757ea76d",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3b781063f3cf4e8dbab2b6660237ae7f",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:3c8229db7f29430db94152ecb3614d01",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3d125fd4361e4a79b26da811d3210a5c",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:3e198dea9f6148cd91c0bd8627a8f9bc",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:3e5b9385b9a541f1b7721420dab13e43",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4183dbfebee24ed18fba04b6b7430cfb",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:41fa891a2b20482b9d6db2f233a3b141",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:43192797f99d4dbeb41a5cec66d94523",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:45cbf436b5d642708f5914eb7548e9bb",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:483a8ce5950444839cdfb6e3325c1003",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:485e457da7a54355a853a54e15813de0",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:487043f4abcd400f87ac77e6a3fa08ea",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:48937597b7a74225a2ab1f473b5e9bd2",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:49521250e6a945d08be0f3d509b35012",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:49ab22e42f6f43c097640ac72e14cb1e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4a77172bf78b46f5acb29f9f9983ef24",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:4a9dbad4277c427e9f470f9b53faf095",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:4b9f62e3c7ce41048737ed4e92c21b32",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4cb7dc7e176d4affab829ab28e1c8f26",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4cbac8a56f614aa7b19f59c3a5ee4353",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4cd569dfe152487b9a5f20a945b7f4f7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:4ed56b00c5a3443bb49ef41f6d185c18",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:521a42584984418bb9f050a1f40c5e91",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:526b9c7c25b14894b41a8c57aff5999b",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:5311909efaca4ab580654676d1850946",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:53cc8d3621e44c3289abf890710ef103",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:548fed1374cb45f68c06ed4199a22013",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:550991f7887b44b5a7e2e3344ec6f40f",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:552e150977d94d2ebeb3c3dce4cb9225",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:55ae9385e2be4243a1e03a2e6c5a6855",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:55da325960b54e06a4938fce3812ab72",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:55edaf10765d46d4af4e841823a9797a",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:565516b32ecf49f58507d9aff9aba896",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:56f05cbb4769419f8c28125be53cc19b",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:575296814cec4136beac5e2e07bc1129",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:57cb23bf08a94cda99b9a6f84265b765",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:5982995de1ff42d7b27f4eb65c8b06f9",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:59cdebeb8a294bc194469e6abda70916",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:59d026b9b6ce4a1f9503daa75b102b75",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:5a84229f2be94fba8975e9e371c8b62b",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:5ab3c8c5e0724acb9278f86dc211bb02",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:5b8ab8cd8fc949059e0f0dd88fb5394a",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:5cbea2d1cb6544cd9700df91d9536849",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:5d331b6469064a81ab0d17c382305e20",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:5ebe8eaa0ac64558a108f93cffd20ecd",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:5edd5b8acbe143319666ae4a52003f05",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:60aa32ba306541168087ee835ce8d890",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:631dc5aae8b34b7e98e8ec298954d500",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:662f47b5fb3845a9a8edde6bf3e2be58",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:675eae9a9ff14403913a921ac96e616f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:679ad58d468945cd9504da24ca3f3af3",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:68754d71061b4e8e802782825de71b1d",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:69f726f7c7c74363b9589065b982e6ac",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:6a16ee2eae0c4170a68854d05ae833ae",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:6d6734687af54bf6a52ee106fd4430f9",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:6d6b6c10a8e54058a732a8ee93386575",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:6dd0d2a0f86344e7bf7784da72450fec",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:6e01378b3fce40eab2043f18fec3b6ea",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:6e1bff2129fc493dabfa748eb133828f",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:6e6f3d1b56ff4e1986ec2f6608675516",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:703064aa11eb46df9d074e4c8c489572",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:708eea96803141f7b40237fd965e7301",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:75cf5e6c61fc4bb9a5f611e28b684646",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:75e4c64bd97b43f28be873d249c52c28",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:775aafb965f44a6b9e653d627ec7db8c",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:781802a35f084fff8ab74a197c566d2e",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:790d11d29dea4a71be1b7fb0910f36df",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:7b00e58b59ed4c208ef75bc9666dfb1c",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:7bc0ca0d3fbc487a87d5a15374f818e4",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:7c02b5f5d7de419dbfbc8f5b9ec5b318",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:7ee435a6c14941e8b64629bb23b01cfc",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:7f40b19725d84e959f179c3dbb23d02f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8047a50eb2374c1badb81b72cec7e811",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8114b843fa8b430a9b914e41e226e6d8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8142fe90dfc34cdfa24eafd23e14c076",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:817dd98bcfcb438195280772d9a97c8f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8212116814624ac3ab3c645bb720a0de",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:82943211be154191a753fa4fcf7dfb35",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:85c0b1eda9354a8a983fdea8181f18ee",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:861ded4c9d8948dcb6cd1e58eb52f15a",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:86caa0a00a254835a565b6b6368712c3",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:87a694aee8324e27914b2a36f7fd6325",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:89c5bbbd48464466857f85d3e339e803",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8a781bf3491d48c4be60d1b0e9e181a5",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8c87c575a37b4be19525a1c933f7c3d8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:8c95da66410147e7bed21ba7169ea61f",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:916f9148e8bf44de8da16c02fccb6b51",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:9241429e7d504184ae95fb54442f878b",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:925c4bf96190454cb30553e1baeea7fd",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:933eb6fcf4de44d484ee85b8e4f4cfa5",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:96bdf40331474518afd56d346a174c09",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:97669ffe9fe647e9a58303467debf945",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:97ae288670c145abbb06592215737fed",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:97f21f8bab974446b860d21ddd7f9df2",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:998aeb1138d342bf96ee8e47a4bf03a7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:9a5ca099ac164f0dac3b4522c9579216",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:9ac0b4c0778d4934a50545eb41bb3a99",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:9d98053936034d0483c6431e4f641143",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:a08f30bb1a6c4e9fb91e8205cca1d24a",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a09efb1702ac4402800e448db0b60002",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a17af06b7b1040b890cb120917f64cc4",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a181b18031ed401286e7907bc9f9644d",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a242ec24c8ce41669c39d738021cf227",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:a375efe7dcc04d78b7e42b44ed3684c8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a565d54fd6de484ba23158af6c4c3cf8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a617c9e4c7a7471181df725b4fd52abe",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a6e0087e06c34e17aae300ed57595723",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a7ea76d0bcff46ba8a15936247e2c177",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a8fd38fc67334ef7af3fae7a4e9e152f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:a93926cdf20848cbb2dc777e4331e0e7",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:a99310af7c2b4c8f8915191b91bba56e",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:ab1f36003d4e4372916bdcf5dd79dc66",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:abf7231db16a4ccfa58e0973e98e91c1",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:ad0232f04b934c6e928f1fb07cbb3f77",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:af2526b390124d9eade3f9053886f288",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:af364710ffef4b41a0859036e6583cb1",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:af89fc780a8c460ba46951fc64ac0742",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:b124decfddf241e0bb6d415ea4847ad4",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b294a7b9f0864e9ab70a9656fc717a7e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b2f9652f99c548c9bf617779342c4bb7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b2f9e10677b24cca92f556109fecb66c",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b4bd67b018234ad1b5fac3311541dbdf",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:b759ed23b84b48e787f4fe9fab645b59",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b772fcd48adb4e0dbbb54ecd43454f77",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b7d049886e4040978f1915fab7dd3928",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:b9ecba664d1d4cffbb5c1505e02e3ece",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:ba2e1c7b9a2146268288d8d5ac7ef988",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:bac7852e2cb74ff5aa5d5888f341669c",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:beca2c392bb846b8b8cbdb75975de2e5",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:c0e83a0f13224e2c9d6814cdf6d0ceac",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c299930aca1c4c5aa2f76aceac3b469b",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c328ca3b7be04fd6a8cc21c9f9e1c6ca",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c3c2218ae08a4e99b7147621dca423ef",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c6374beec49b44bb887de57d322bcd39",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c880f8b15e6d4b0ab8fd8a8dbcccc9de",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:c948d2c7ee98478bb1a66639f3da2955",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:c98243eff27b416cb73042755f98e8eb",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:cb0f8dffc8324059bc972c892124305d",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:cbe44b3548114f3fb7d404fc40f82726",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:cbf5e410493545559098b4917853c094",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:ccfaf9f64e084d168e0417166fd1baa9",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:cd737124a8c444d0bda57ba51f4faf33",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:cdbd92a249df4bb287c966b24ec3f1fc",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:cefd33723d944896aed87064dd1e0620",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d0046df315994df4bd65692d05a4de7c",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d00ad0f1a83f4520a3251b6916557372",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d0b33a59ae0d401a960a57474761cda1",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:d0f27ba1ae054e2fa6a526a30af4c0c5",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d1d2cf2b55ca433f9932bc33b641b470",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d2112d932a714bbf875080626c135d31",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:d22c083c0dc84a40bb931a69898369f1",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:d2b60841e8aa48e59c9c0be4e11f8dee",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d3e7d7d267e2432591e5230935c8ee9e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d3f8683aff42466284603d2d122eb4bd",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d46067c19657451a908c54f2666307a1",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d660e39c310b4909b63daa06d0c00100",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d69f73c757384c0493bfb18bc120d72a",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d6c1084955f941a48bdbafbaf062f433",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:d8926e12d9874c5fbde46d2b3ab7b676",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:db485ce2834940f686472619d42cb325",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:db8ef7cb5de14202bc03fb3ae72661af",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:dbcd000f65384e85b11a9d48383710d2",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:dc469e2d4b9646399db743394cd8dca6",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:df5f65845c0c4e24983eaffeeed8faca",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:e015103613d84a6489a1867aa85f4f65",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:e130cad542ec47d0b018948ff144eb27",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e2196846253947859f46e5b0a4e79237",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:e2272a12cb214edf940a5ba5f1a9c16c",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e29e6ad1c8bc43849a4bf5908f6c2035",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e2e5e65b75ca4d89a7c5a0c28160637e",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e2ea40958e37455f9e5ef77ddf3b6172",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e49b386bc0b94e50b5d5a2534307d874",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e6a97ef6d5f642e9a7b9842e654ae898",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e6ed64723977474fab6469c11bdd5eed",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:e8071ca934ba49188f0a45bf20039532",
+          "base_correct": 3
+        },
+        {
+          "id": "supergpqa:e84d22c04a424396885bbf0722da5b4f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:e8802864001647569f1567674fea611b",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:e90acb4e32344dd5974081309540f2ea",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:e9850e7c1b5744b19cdf700c4bbac0ab",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:ea100d9f44744f91b26c507e91bb62e8",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:ec0e07412390479982f5775406e7c606",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:ec7c69ddfa85418fbb19d7afca885717",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:eed8538bd9d44dec936a6e49aa2e8c0d",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:ef0b43160d8241c6bbaf4a579a6370f7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f0200c14c8414c9b907f738d7499ece9",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f18495ae49324e02a8efa45954e39383",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:f19cf36b7adb4f5c99a03018421cfc29",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f2feeca7d7de441c984dc53b9c366ecb",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f348956062b14015936a17e4a45a62dc",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f3847f2567b84fd88bc3fa9956c5fbbf",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f4ef4c703a6a4221961f6a4dbb1c60cc",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f50bf9ec6aa540b0a9fc6d1c2d7fcccc",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f54fc10f1226433c9cb82bd161315a39",
+          "base_correct": 2
+        },
+        {
+          "id": "supergpqa:f682e69272be4f629f424b439c072792",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:f88182f7f0394772a04026b82cca694f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:f998ed8438cc4a93a0178227395cb70b",
+          "base_correct": 1
+        },
+        {
+          "id": "supergpqa:f9f4342f16ab444aab4e5cf2b14b3a41",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:fadf7630b1b34ece81b13d338d5309b6",
+          "base_correct": 4
+        },
+        {
+          "id": "supergpqa:fbac9c91df0e48c091fd78047f050492",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:fbb80daa44304c6c887e934fbbfc7c0f",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:ff7bee88ed774e1297778279b5810ea7",
+          "base_correct": 0
+        },
+        {
+          "id": "supergpqa:fff508e315b443d98e0aa5641302c33d",
+          "base_correct": 4
+        }
+      ]
+    },
+    {
+      "key": "medxpertqa",
+      "benchmark": "MedXpertQA",
+      "suite": "medxpertqa_text_500",
+      "config_path": "configs/medxpertqa.yaml",
+      "n_full": 500,
+      "all_ids_sha256": "b33d7723455e10f7c93b703f82e3fc2711e93d3292587d12cd576c901b18fcfb",
+      "n_hard": 410,
+      "hard_problems": [
+        {
+          "id": "medxpertqa_text:Text-10",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1013",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1021",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1032",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-104",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1056",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1063",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1065",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1071",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1082",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1094",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1095",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1101",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1107",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1116",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-112",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1121",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1125",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1132",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1145",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1149",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1151",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1153",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1161",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1166",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1172",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-118",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-119",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1193",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-120",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1206",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1209",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-121",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1211",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1225",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1230",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1233",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1237",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1247",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1252",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1255",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1258",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-126",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1264",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1291",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1294",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1298",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1307",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1311",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1312",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1319",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1333",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1335",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1337",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1339",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1347",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-135",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1362",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1363",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-137",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1374",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1375",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1379",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-138",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1385",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1386",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-139",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1397",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1398",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1400",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1402",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1403",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1418",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1419",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1430",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1434",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1435",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1441",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1444",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1445",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1454",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1462",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1475",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1478",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-148",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1487",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1492",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1496",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1499",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1506",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1511",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1515",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-152",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1551",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1553",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1557",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1561",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1569",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1571",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1572",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1574",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1578",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1581",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1587",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1598",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-160",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1600",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1604",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1605",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1607",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1610",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1622",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1627",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1645",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1660",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1661",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1663",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1665",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1670",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1671",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1674",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1679",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-168",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1689",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1690",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-17",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1704",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1710",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1716",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1725",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1742",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1743",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1752",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1773",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1776",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-178",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1783",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1784",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1788",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1795",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1799",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1804",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1819",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-182",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1820",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1823",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1829",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-183",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1832",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1833",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1834",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1846",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1853",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1873",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1876",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-188",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1882",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1884",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1886",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1897",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1905",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1908",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1909",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1913",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1915",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1919",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1922",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1928",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-193",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1931",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-1939",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-194",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1940",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1944",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-1947",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-195",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-1950",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1954",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1955",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1963",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-1967",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-197",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1970",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1973",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1974",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1986",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1991",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-1992",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-200",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2005",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2007",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2008",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2014",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2015",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2018",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2020",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2022",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2028",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2029",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2030",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2032",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2033",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2034",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2038",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2043",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2047",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2054",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-206",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2074",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2083",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-2085",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2097",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2101",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2112",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-212",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2123",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2128",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-2131",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-2139",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2143",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2147",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-215",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2156",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-2157",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2160",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-2164",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2177",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2182",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2197",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-22",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2200",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2204",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-222",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2224",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2225",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-224",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2240",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2243",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2249",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2252",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2254",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-2259",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-2272",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2273",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2280",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-2290",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2295",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-23",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-230",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2300",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2304",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2314",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2319",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2321",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2324",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2328",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-2329",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-2332",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2346",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2350",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2352",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2358",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-236",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-2363",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2365",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2366",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2375",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-2376",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-2381",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2384",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2385",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2386",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2391",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2399",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-2424",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-245",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-251",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-252",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-263",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-264",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-267",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-272",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-274",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-275",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-282",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-287",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-299",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-306",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-307",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-309",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-314",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-318",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-327",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-33",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-331",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-333",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-34",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-345",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-352",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-354",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-36",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-363",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-366",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-37",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-374",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-4",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-400",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-402",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-412",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-415",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-422",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-431",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-436",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-441",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-445",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-45",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-457",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-466",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-467",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-476",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-479",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-482",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-484",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-486",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-49",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-496",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-503",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-504",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-518",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-521",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-531",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-533",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-534",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-537",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-538",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-560",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-568",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-573",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-580",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-583",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-595",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-599",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-601",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-62",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-620",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-630",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-640",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-645",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-65",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-689",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-692",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-695",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-699",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-70",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-702",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-705",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-713",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-715",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-718",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-72",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-722",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-724",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-727",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-728",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-729",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-732",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-74",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-743",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-746",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-753",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-757",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-765",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-766",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-769",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-770",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-771",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-788",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-792",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-799",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-800",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-801",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-816",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-821",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-829",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-830",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-837",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-840",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-844",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-845",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-854",
+          "base_correct": 1
+        },
+        {
+          "id": "medxpertqa_text:Text-856",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-859",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-866",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-886",
+          "base_correct": 3
+        },
+        {
+          "id": "medxpertqa_text:Text-9",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-903",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-91",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-912",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-916",
+          "base_correct": 4
+        },
+        {
+          "id": "medxpertqa_text:Text-919",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-930",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-936",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-940",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-949",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-956",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-970",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-984",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-987",
+          "base_correct": 0
+        },
+        {
+          "id": "medxpertqa_text:Text-99",
+          "base_correct": 2
+        },
+        {
+          "id": "medxpertqa_text:Text-996",
+          "base_correct": 0
+        }
+      ]
+    },
+    {
+      "key": "mmlu_pro",
+      "benchmark": "MMLU-Pro",
+      "suite": "mmlu_pro_500",
+      "config_path": "configs/mmlu_pro.yaml",
+      "n_full": 500,
+      "all_ids_sha256": "d3e027fef1e4a37ba129826b613c903e9dd1996dfef298db8e61f2f939228767",
+      "n_hard": 129,
+      "hard_problems": [
+        {
+          "id": "mmlu_pro:10052",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:10322",
+          "base_correct": 2
+        },
+        {
+          "id": "mmlu_pro:10365",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:10479",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1074",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1083",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:10852",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:10909",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:10992",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11038",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11039",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11211",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11236",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11269",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11343",
+          "base_correct": 2
+        },
+        {
+          "id": "mmlu_pro:11353",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:11384",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:11442",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:11686",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1170",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11731",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:11815",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:11886",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:11951",
+          "base_correct": 2
+        },
+        {
+          "id": "mmlu_pro:1198",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:12122",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:12151",
+          "base_correct": 4
+        },
+        {
+          "id": "mmlu_pro:1224",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1239",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1290",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1300",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1336",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1366",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1410",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1442",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:1445",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1496",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1540",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1562",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1581",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1608",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:1624",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1643",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1694",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1728",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1781",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1845",
+          "base_correct": 4
+        },
+        {
+          "id": "mmlu_pro:1855",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:1895",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1900",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1918",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:1927",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1947",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:1971",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:2016",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:2274",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:2300",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:2470",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:2541",
+          "base_correct": 2
+        },
+        {
+          "id": "mmlu_pro:2792",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:290",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:3298",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3454",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3646",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3725",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3792",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3878",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:3917",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:411",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4319",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4385",
+          "base_correct": 4
+        },
+        {
+          "id": "mmlu_pro:4589",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4709",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:473",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4733",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:4735",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4804",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4876",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4906",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:4949",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5006",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5088",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5136",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5152",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5251",
+          "base_correct": 4
+        },
+        {
+          "id": "mmlu_pro:5337",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5344",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:5434",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5442",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5601",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:5663",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5726",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5847",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5854",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:5999",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6087",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6310",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6495",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6508",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6574",
+          "base_correct": 2
+        },
+        {
+          "id": "mmlu_pro:6616",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:6641",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:688",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:6931",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:705",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7075",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7167",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7223",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7268",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7306",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7482",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:7490",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7511",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7562",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7767",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:783",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:7928",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:828",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:8617",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:8762",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:878",
+          "base_correct": 3
+        },
+        {
+          "id": "mmlu_pro:8876",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:888",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:8955",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:9105",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:913",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:9312",
+          "base_correct": 0
+        },
+        {
+          "id": "mmlu_pro:957",
+          "base_correct": 1
+        },
+        {
+          "id": "mmlu_pro:983",
+          "base_correct": 0
+        }
+      ]
+    },
+    {
+      "key": "chem_organic",
+      "benchmark": "ChemBench",
+      "suite": "chembench_organic_chemistry_mcq_384",
+      "config_path": "configs/chembench.yaml",
+      "n_full": 384,
+      "all_ids_sha256": "1a2672fb46381097264c74e48ff3e6626afbb2f0bc11f705f8f3d5af2665c4f5",
+      "n_hard": 61,
+      "hard_problems": [
+        {
+          "id": "chembench:organic_chemistry:00fe1852-edca-b995-69fc-3c27b50103aa",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:0231e79b-b254-22f3-5440-262befef4606",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:organic_chemistry:026f97d0-a11f-6f7a-7d5d-2902fd8ba8e8",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:02aad8a7-c503-c4dd-2221-03f481308be6",
+          "base_correct": 4
+        },
+        {
+          "id": "chembench:organic_chemistry:0300c410-7253-a4b2-6dac-02ff5d5dbcae",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:0e595ead-cf33-9485-ac9b-ab57fd96cb69",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:129c5c18-2478-8ab4-b871-39593cd4b1cf",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:organic_chemistry:199cd7fb-d4af-ae39-a92a-481b0b0aa174",
+          "base_correct": 4
+        },
+        {
+          "id": "chembench:organic_chemistry:23fc4ee0-6fbd-860f-5d98-f9d2a9db4275",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:24063b69-b8c1-0b15-e9e4-b0c5f6c2ee73",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:24e69c28-f85e-86bc-6abd-0261232818eb",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:2614f771-dbe4-5c32-e16a-f45afc89ce94",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:organic_chemistry:27fc5ea6-a0b1-c7cd-5115-250f920c3455",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:2a9caba1-b7cb-dd9d-b438-cb6c7961e44e",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:316928a5-1bf4-28bd-c481-4d14fdfd4b65",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:331923ee-baf5-9394-2fbf-e37d27a6ce0d",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:organic_chemistry:339b3b8d-e150-e65a-e61c-0a3b471e8cbe",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:33c9e599-c0bf-88f8-5967-cfd91023e1c1",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:39507e8a-f0de-1a4b-975f-658fdda886a1",
+          "base_correct": 4
+        },
+        {
+          "id": "chembench:organic_chemistry:3e4f2da9-fc90-5869-608e-e3a4e750ceed",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:401f2a31-05e0-a768-1ebf-0ac93a393503",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:4b5d07b2-bbcc-aa64-aee3-667f5d4ca2d3",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:4c91429e-bdd2-df76-7694-24c42d8921f5",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:4da013f9-ff45-db2b-a38d-9d477edc38d7",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:50c32555-fdaa-61c7-f546-39044770f3ba",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:50e74cba-e1be-32ea-cf14-5cdc1d48ceca",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:538c0225-f7ff-f163-12f5-be69e8504249",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:593a1327-6399-fbf0-00a3-8de556d102f3",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:5a0f25b6-aac8-c35f-e021-f210ec92a4c2",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:organic_chemistry:5e49b848-ec00-1114-1e3f-ff9de5b4b328",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:651fd5b5-05f4-bfde-3333-71b8ce184920",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:6bac5530-5ee6-92c0-e165-13ff890b2bfa",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:6e531274-77a7-ce64-621c-5920d7b28b37",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:74fc9d23-4b1a-3811-335d-3df492dd702f",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:7586f208-99d2-39ff-e125-be287d19467d",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:organic_chemistry:7a7721f1-a0ca-8e86-2d46-dcd3036dd601",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:7de507f4-8ec2-b2be-b243-1d85976d18b8",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:organic_chemistry:8100ef0f-745f-bebd-4d29-3cafe8867d35",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:8cceee20-1801-9b96-2b5b-f3363428c402",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:8d759abb-07e6-c291-8255-ace2f247650a",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:93c180e9-dc8b-c411-8042-4bba74141f01",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:organic_chemistry:9beb93ff-43a7-fc4d-40f0-b196e46168ba",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:9bfc5d17-6040-0dbd-d691-6c166dbf0bb1",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:organic_chemistry:aed904dd-cd2f-0425-a322-df690a9f6834",
+          "base_correct": 4
+        },
+        {
+          "id": "chembench:organic_chemistry:be672f0f-c4a4-3bda-4f04-99f4441106aa",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:c180b8be-2c00-5d2c-b5d6-d3d960464dd7",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:cbecfdcc-1a53-acf3-9316-aeea1a6b59aa",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:cdef9123-f038-477b-408b-227f08aaad14",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:ceda1e6a-ef74-5456-a5fd-11f3ab23b9b7",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:d2a6d3b7-3e98-ea54-b72b-87ed0b7cc89c",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:d95ba16e-7d33-cecf-b09d-27c709f36fad",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:e30be6ba-8d07-c2e4-5ee5-7961c736fa72",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:e56f1a35-de6f-495c-c2e8-52c56bd5116d",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:ea2f4ee7-3c71-5fbd-73eb-45242f6e5695",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:ea7200a0-8b99-894d-f4cc-7526c0899f88",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:f1b80d18-903b-d124-ba2b-957e7eb5fda8",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:f2d5b9e6-ebba-bc33-7ca7-2328745ccc7d",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:organic_chemistry:f6cc6be1-b6af-9994-faf9-c65fdece19ec",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:organic_chemistry:f9768d2b-327c-a723-30a7-a51607bc7ac3",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:fe66ed68-05c0-af60-03a8-0523281ba86f",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:organic_chemistry:fef1eaf5-7574-9871-04ba-73a63e4b5c8b",
+          "base_correct": 2
+        }
+      ]
+    },
+    {
+      "key": "chem_materials",
+      "benchmark": "ChemBench",
+      "suite": "chembench_materials_science_mcq_57",
+      "config_path": "configs/chembench.yaml",
+      "n_full": 57,
+      "all_ids_sha256": "7fd838dceaca8eab404df7509492657d23f749abeba3a7f9f46cf2a69667d7c8",
+      "n_hard": 11,
+      "hard_problems": [
+        {
+          "id": "chembench:materials_science:4f4d2e4a-39df-9020-01e3-7077f88ba564",
+          "base_correct": 4
+        },
+        {
+          "id": "chembench:materials_science:64884be4-ec8f-4d1b-bafc-44e734cb375e",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:materials_science:73259a62-6956-4fe4-8bb5-edffad8e179b",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:materials_science:735bef27-e889-574d-9259-91abce5ce364",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:materials_science:912f0fab-5316-435a-4a33-dd67aa422e03",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:materials_science:b5b2a0dc-43a4-573c-e029-43c5a0a6b18a",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:materials_science:b74b76e4-0a13-c358-b54e-55fe92f21503",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:materials_science:bbccf362-8b16-bf16-817d-3ece1adb19e4",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:materials_science:cef4ef62-d867-88da-7904-f52c3c4f15bc",
+          "base_correct": 2
+        },
+        {
+          "id": "chembench:materials_science:d82106cb-ba3d-8a04-db1d-bb253ad797bc",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:materials_science:fe718e0e-9aca-20db-da55-403d050c0c97",
+          "base_correct": 3
+        }
+      ]
+    },
+    {
+      "key": "chem_inorganic",
+      "benchmark": "ChemBench",
+      "suite": "chembench_inorganic_chemistry_mcq_49",
+      "config_path": "configs/chembench.yaml",
+      "n_full": 49,
+      "all_ids_sha256": "8e12c271c724c8aa6a6f5e3077baf3e8d74a95496eadefd509c09ae17fe1af23",
+      "n_hard": 8,
+      "hard_problems": [
+        {
+          "id": "chembench:inorganic_chemistry:1d126c26-8eec-08bd-465d-d66575125a86",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:inorganic_chemistry:2614e363-e1fe-7167-359a-a1907a75aed4",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:inorganic_chemistry:8aa334a4-89b8-cfc8-1c53-6de631a08ac6",
+          "base_correct": 1
+        },
+        {
+          "id": "chembench:inorganic_chemistry:9247b4c5-16d9-1f9d-bfa0-ec472ec441b7",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:inorganic_chemistry:a96c70ef-4703-7708-1ec0-12e00a5d2ae0",
+          "base_correct": 3
+        },
+        {
+          "id": "chembench:inorganic_chemistry:ec5c420d-8fc8-03f4-1ea1-d838cfb86b6d",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:inorganic_chemistry:f2349650-1051-23a3-1463-190caf6f5f93",
+          "base_correct": 0
+        },
+        {
+          "id": "chembench:inorganic_chemistry:fb0a7cea-fb75-6382-1c97-3bfcc3b2d0c9",
+          "base_correct": 0
+        }
+      ]
+    }
+  ],
+  "hard_set_sha256": "fc91c143372057487d7fc4cd711ff3806e9a668ad831ab377dce54d842d912ba",
+  "n_full": 2420,
+  "n_hard": 1158
+}

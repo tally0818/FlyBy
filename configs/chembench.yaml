@@ -1,0 +1,28 @@
+suites:
+  chembench_organic_chemistry_mcq_384: {path: data/eval/chembench_organic_chemistry_mcq_384.jsonl, k: 16}
+  chembench_materials_science_mcq_57: {path: data/eval/chembench_materials_science_mcq_57.jsonl, k: 16}
+  chembench_inorganic_chemistry_mcq_49: {path: data/eval/chembench_inorganic_chemistry_mcq_49.jsonl, k: 16}
+
+chembench:
+  dataset:
+    name: jablonkagroup/ChemBench
+    revision: 6e1d25748952393f44e35b8e85bbe567246a6430
+    split: train
+    subsets:
+      organic_chemistry:
+        suite: chembench_organic_chemistry_mcq_384
+        expected_source_rows: 429
+        expected_selected_rows: 384
+      materials_science:
+        suite: chembench_materials_science_mcq_57
+        expected_source_rows: 83
+        expected_selected_rows: 57
+      inorganic_chemistry:
+        suite: chembench_inorganic_chemistry_mcq_49
+        expected_source_rows: 92
+        expected_selected_rows: 49
+  selection:
+    type: single_answer_multiple_choice
+    shuffle_seed: 42
+  paths:
+    sample_manifest: data/eval/chembench_main_manifest.json

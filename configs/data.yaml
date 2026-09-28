@@ -1,0 +1,73 @@
+
+
+train_sources:
+  math:
+    - name: arxivmath_training
+      hf: MathArena/arxivmath-training
+      revision: df8124014f27975d4457d02c95c29b5941e58130
+      split: train
+      format: math
+
+    - name: dapo_math
+      hf: open-r1/DAPO-Math-17k-Processed
+      revision: 31dd309567e3da778038cc87d868b6097a3ccf68
+      hf_config: en
+      split: train
+      format: math
+      filter_lang: en
+
+  science:
+
+    - name: goosereason_stem
+      hf: nvidia/Nemotron-Research-GooseReason-0.7M
+      revision: 043e538672eaf11b2195ddee7549e68ad3a1099e
+      split: stem
+      format: options_mcq
+
+self_split:
+  supergpqa:
+    hf: m-a-p/SuperGPQA
+    revision: 4430d4458112c7d4497fdcf94d7cc223313d6acf
+    split: train
+    domain: science
+    format: supergpqa
+    test_suite: supergpqa_test
+
+    test_size: 500
+    train_size: 5000
+    seed: 42
+    stratify_by: [discipline, difficulty]
+
+    include:
+      discipline: [Science, Engineering, Medicine, Agronomy]
+
+eval_suites:
+
+  arxivmath_base:
+    name: arxivmath
+    hf: [MathArena/arxivmath-1225, MathArena/arxivmath-0126, MathArena/arxivmath-0226,
+         MathArena/arxivmath-0326, MathArena/arxivmath-0426, MathArena/arxivmath-0526]
+    revision: [90c60aa1eadbb72168640169d82154b079cdeaac,
+               bac939ba603c93f905aa48072980ea681a2824cd,
+               a038fd1b01405ea1102e165b6ef43693fd16ca6b,
+               14ff32983ae4c72b75fb64eba750f3c27f46607a,
+               5e58127fba079b6db1c5aef0fee5dc61fc43da8d,
+               69f701c7f266bfba235ef302ff9b19093f7455bb]
+    split: train
+    domain: math
+    format: math
+
+  gpqa_diamond:  { hf: Idavidrein/gpqa, revision: 633f5ee89ab8ad4522a9f850766b73f62147ffdd, subset: gpqa_diamond, split: train, domain: science, format: gpqa }
+
+mcq:
+  shuffle_seed: 42
+
+decontam:
+  ngram: 13
+
+  id_fields: [paper_id, source]
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  eval: data/eval

@@ -1,0 +1,8 @@
+
+datasets>=3.0
+faiss-cpu>=1.8
+fastapi>=0.115
+numpy<2.0
+torch>=2.6
+transformers>=4.51,<5
+uvicorn>=0.34

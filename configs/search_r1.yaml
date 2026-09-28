@@ -1,0 +1,68 @@
+
+
+model: Qwen/Qwen3-4B
+model_revision: 1cfa9a7208912126459214e8b04321603b3df60c
+seed: 42
+
+data:
+  train: data/processed/train_rl.jsonl
+
+rollout:
+  n: 8
+  temperature: 1.0
+  top_p: 1.0
+  top_k: -1
+  batch_prompts: 8
+  log_prob_micro_batch_size_per_gpu: 1
+  max_prompt_tokens: 4096
+  own_tokens_total: 16384
+
+  max_response_tokens: 22592
+  max_turns: 4
+  max_obs_tokens: 1536
+  stop: ["</search>"]
+  mask_observations: true
+
+search:
+  type: search_retrieval
+  retriever_url: http://127.0.0.1:8000/retrieve
+  topk: 3
+  timeout_s: 30
+  concurrency: 16
+  max_query_chars: 300
+  max_result_chars: 6000
+  router_workers: 1
+
+reward:
+  function: src/train/reward_accuracy.py
+
+optim:
+  adv: grpo
+  norm_adv_by_std_in_grpo: false
+  loss_agg_mode: token-mean
+  lr: 1.0e-6
+  ppo_mini_batch_size: 8
+  ppo_micro_batch_size_per_gpu: 1
+  ppo_max_token_len_per_gpu: 28672
+  ppo_epochs: 1
+  clip_ratio: 0.2
+  clip_ratio_low: 0.2
+  eps_high: 0.28
+  entropy_coeff: 0.0
+  use_kl_loss: true
+  kl_coef: 1.0e-3
+  kl_loss_type: low_var_kl
+  grad_ckpt: true
+  dynamic_bsz: true
+  optimizer_offload: true
+  gpu_memory_utilization: 0.70
+  tp: 1
+
+run:
+  max_concurrent_trajectories: 16
+  wandb_project: EffieReasoner
+  out_root: outputs/models/baselines
+  total_steps: 80
+  save_freq: 40
+  val_freq: -1
+  val_before_train: false

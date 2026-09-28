@@ -1,0 +1,26 @@
+
+defaults:
+
+
+  - ref
+  
+
+  - ../engine@fsdp_config: fsdp
+
+
+  - _self_
+
+
+
+
+model: null
+
+
+
+ulysses_sequence_parallel_size: ${oc.select:actor_rollout_ref.actor.ulysses_sequence_parallel_size,1}
+
+
+entropy_from_logits_with_chunking: False
+
+
+entropy_checkpointing: False

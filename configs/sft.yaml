@@ -1,0 +1,17 @@
+model: Qwen/Qwen3-4B
+model_revision: 1cfa9a7208912126459214e8b04321603b3df60c
+data: data/processed/sft.parquet
+out: outputs/models/sft
+
+train:
+  epochs: 2
+  lr: 2.0e-6
+  batch_size: 1
+  grad_accum: 8
+  max_seq_len: 24576
+  warmup_steps: 8
+  bf16: true
+  seed: 42
+mask:
+  supervise: segment_flags
+  continuation_max_tokens: 24576

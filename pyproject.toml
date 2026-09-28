@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "effiereasoner"
+version = "0.1.0"
+description = "Cost-aware tool-use training and evaluation for compact reasoning models"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "datasets>=3.0",
+    "httpx>=0.27",
+    "math-verify>=0.7",
+    "numpy<2.0",
+    "pandas>=2.0",
+    "pyarrow>=19.0",
+    "python-dotenv>=1.0",
+    "PyYAML>=6.0",
+
+    "transformers>=4.51,<5",
+    "vllm>=0.11.0",
+    "wandb>=0.19",
+]
+
+[project.optional-dependencies]
+train = [
+    "aiohttp>=3.11",
+    "cachetools>=5.5",
+    "fastapi>=0.115",
+    "fire>=0.7",
+    "librosa>=0.10",
+    "pillow>=11.0",
+    "qwen-omni-utils",
+    "qwen-vl-utils>=0.0.14",
+    "regex>=2024.11",
+    "soundfile>=0.13",
+    "torch>=2.6",
+    "tqdm>=4.67",
+    "uvicorn>=0.34",
+    "vllm>=0.8.5,<=0.11.0",
+]
+retriever = [
+    "faiss-cpu>=1.8",
+    "fastapi>=0.115",
+    "torch>=2.6",
+    "uvicorn>=0.34",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "verl_tool*"]

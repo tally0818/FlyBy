@@ -1,0 +1,22 @@
+seed: 42
+
+suites:
+  arxivmath: {path: data/eval/arxivmath.jsonl, k: 16}
+
+decontam:
+  id_fields: [paper_id, source]
+
+arxivmath:
+  dataset:
+    name: MathArena/arxivmath-0626
+    revision: 45156c2e0e75d754fd636c4256f921845194437c
+    split: train
+    data_file: data/train-00000-of-00001.parquet
+    expected_source_rows: 49
+  evaluation:
+    suites: [arxivmath_0626]
+  paths:
+    base: data/eval/arxivmath_base.jsonl
+    june: data/eval/arxivmath_june.jsonl
+    june_manifest: data/eval/arxivmath_june_manifest.json
+    sample: data/eval/arxivmath.jsonl

@@ -1,0 +1,97 @@
+
+
+
+
+
+
+enable: False
+
+
+
+enable_resource_pool: False
+n_gpus_per_node: 0
+nnodes: 0
+
+
+strategy: ???
+
+
+model:
+
+
+
+
+
+  input_tokenizer: ${actor_rollout_ref.model.path}
+
+
+
+  path: ~/models/FsfairX-LLaMA3-RM-v0.1
+
+
+  external_lib: ${actor_rollout_ref.model.external_lib}
+
+
+  trust_remote_code: False
+
+
+
+micro_batch_size: null
+
+
+micro_batch_size_per_gpu: null
+
+
+max_length: null
+
+
+use_dynamic_bsz: ${critic.use_dynamic_bsz}
+
+
+forward_max_token_len_per_gpu: ${critic.forward_max_token_len_per_gpu}
+
+
+
+
+reward_manager: naive
+
+
+
+launch_reward_fn_async: False
+
+
+sandbox_fusion:
+
+
+  url: null
+
+
+  max_concurrent: 64
+
+
+  memory_limit_mb: 1024
+
+
+profiler:
+
+
+  _target_: verl.utils.profiler.ProfilerConfig
+
+
+
+  tool: ${oc.select:global_profiler.tool,null}
+
+
+  enable: False
+  
+
+  all_ranks: False
+
+
+  ranks: []
+
+
+  save_path: ${oc.select:global_profiler.save_path,null}
+
+
+  tool_config: ${oc.select:actor_rollout_ref.actor.profiler.tool_config,null}

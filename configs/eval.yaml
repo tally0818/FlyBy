@@ -1,0 +1,50 @@
+seed: 42
+
+suites:
+  arxivmath: {path: data/eval/arxivmath.jsonl, k: 16}
+  gpqa_diamond: {path: data/eval/gpqa_diamond.jsonl, k: 16}
+  supergpqa_test: {path: data/eval/supergpqa_test.jsonl, k: 16}
+  medxpertqa_text_500: {path: data/eval/medxpertqa_text_500.jsonl, k: 16}
+  mmlu_pro_500: {path: data/eval/mmlu_pro_500.jsonl, k: 16}
+  chembench_organic_chemistry_mcq_384: {path: data/eval/chembench_organic_chemistry_mcq_384.jsonl, k: 16}
+  chembench_materials_science_mcq_57: {path: data/eval/chembench_materials_science_mcq_57.jsonl, k: 16}
+  chembench_inorganic_chemistry_mcq_49: {path: data/eval/chembench_inorganic_chemistry_mcq_49.jsonl, k: 16}
+
+sampling: {temperature: 0.6, top_p: 0.95, top_k: 20}
+
+budgets:
+  vanilla: {max_new_tokens: 16384}
+  ours: {own_tokens_total: 16384, max_turns: 4}
+  search_r1: {own_tokens_total: 16384, max_turns: 4}
+  deepseek: {max_tokens: 16384, n: 16}
+
+deepseek:
+  timeout_s: 600
+
+search_r1:
+  retriever_url: http://127.0.0.1:8000/retrieve
+  health_url: http://127.0.0.1:8000/health
+  startup_timeout_s: 600
+  topk: 3
+  timeout_s: 30
+  concurrency: 16
+  max_query_chars: 300
+  max_result_chars: 6000
+
+tool:
+  q_max_chars: 300
+  timeout_s: 180
+  max_retries: 2
+  concurrency: 16
+  budget_usd: 1000
+  thinking: false
+  depths:
+    1: {model: deepseek/deepseek-v4-flash, max_tokens: 128, p_in: 0.0938, p_out: 0.1876}
+    2: {model: deepseek/deepseek-v3.2, max_tokens: 512, p_in: 0.269, p_out: 0.40}
+    3: {model: deepseek/deepseek-v4-pro, max_tokens: 1536, p_in: 0.435, p_out: 0.87}
+
+pricing:
+  p_gpu_hr: 3.49
+  throughput_json: outputs/bench/throughput.json
+
+output_root: outputs/evals

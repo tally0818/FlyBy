@@ -1,0 +1,102 @@
+
+enable_agent: True
+
+
+max_turns: 1
+
+
+val_max_turns: 0
+
+
+min_turns: 0
+
+
+max_start_length: null
+
+
+max_prompt_length: ${data.max_prompt_length}
+
+
+max_response_length: ${data.max_response_length}
+
+
+
+max_own_tokens_total: null
+
+
+train_max_response_length: ${data.max_response_length}
+
+
+val_max_response_length: ${data.max_response_length}
+
+
+train_max_own_tokens_total: null
+
+
+val_max_own_tokens_total: null
+
+
+max_model_len: null
+
+
+max_obs_length: null
+
+
+max_action_length: null
+
+
+tool_server_url: null
+
+
+n: ${actor_rollout_ref.rollout.n}
+
+
+truncate_obs_side: left
+
+
+truncate_response_side: left
+
+
+rolling_with_prompt: False
+
+
+call_tool_first: False
+
+
+action_stop_tokens: null
+
+
+additional_eos_token_ids: null
+
+
+mask_observations: True
+
+
+force_finish_for_last_turn: False
+
+
+enable_mtrl: False
+
+
+mtrl_role: user
+
+
+mtrl_sep: null
+
+
+turn_end_token: "<|im_end|>"
+
+
+rollout_mode: async
+
+
+mask_overlong_loss: False
+
+
+max_concurrent_trajectories: 1024
+
+
+tool_call_timeout: 30
+
+
+tool_call_max_retries: 1
